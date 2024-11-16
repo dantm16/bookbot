@@ -20,7 +20,7 @@ def full_book(book_path):
 
 def count_characters(text):
     char_count = {}
-    for char in text:
+    for char in text.lower():
         if char in char_count:
             char_count[char] += 1
         else:
