@@ -3,10 +3,11 @@ def main():
     text = full_book(book_path)
     total_words = count_words(text)
     total_chars = count_characters(text)
+    print(f"-- Begin report of {book_path}")
     print(f"The total number of words in this book is {total_words}.")
     print("The total number of characters is broken down as follows:")
     for char in total_chars:
-        print(f"{char}: {total_chars[char]}")
+        print(f"The '{char}' character was found {total_chars[char]} times")
 
     
              
